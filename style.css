@@ -1,0 +1,19 @@
+body{
+    background:linear-gradient(to right,#3c393d,#b4c8d8,rgb(40, 152, 139));
+}
+
+
+.img-continer{
+    height: 50vh;
+    width: 40vw;
+    display: block;
+    margin: 10vh auto;
+}
+
+
+
+.img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
