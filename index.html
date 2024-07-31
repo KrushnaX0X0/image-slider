@@ -8,7 +8,39 @@
 </head>
 <body>
     <div class="img-continer">
-    <img src="hardik.webp" alt="" class="img">
+    <img src="shubman.webp" alt="" class="img" id="img">
     </div>
+
+    <div class="btn-continer">
+        <button  type="button" onclick="back()">back</button>
+        <button  type="button">next</button>
+    </div>
+
+    <script>
+        const gallary = [
+            "/hardik.webp",
+            "/jadeja.webp",
+            "/rohit.webp",
+            "/sachine.jpg",
+            "/virat.webp",
+            "/shubman.webp"
+        ];
+
+        let imgIndex = 0;
+
+
+function back(){
+    if(imgIndex==0){
+        imgIndex = gallary.length -1 ;
+        
+    }
+    else
+    {
+        imgIndex--;
+    }
+    const img = document.getElementById("img")
+    img.src = gallary[imgIndex]
+}
+    </script>
 </body>
 </html>

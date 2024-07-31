@@ -17,3 +17,18 @@ body{
     width: 100%;
     object-fit: contain;
 }
+.btn-continer{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-continer button{
+    height: 5vh;
+    width: 8vw;
+    margin-right: 3vh;
+    background-color: brown;
+    border: none;
+    border-radius: 10px;
+    color: whitesmoke;
+    font-size: 1.5vw;
+}
