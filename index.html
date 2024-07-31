@@ -7,27 +7,29 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>INDIAN CRICKET TEAM</h1>
     <div class="img-continer">
+     
+    <img src="left.png" alt=""   class="btn " id="left"   onclick="next()">
     <img src="shubman.webp" alt="" class="img" id="img">
+    
+    <img src="right.png" alt=""  class="btn "  id="right"  onclick="back()">
     </div>
 
-    <div class="btn-continer">
-        <button  type="button" onclick="back()">back</button>
-        <button  type="button">next</button>
-    </div>
+ 
 
     <script>
         const gallary = [
-            "/hardik.webp",
-            "/jadeja.webp",
-            "/rohit.webp",
-            "/sachine.jpg",
-            "/virat.webp",
-            "/shubman.webp"
+            "hardik.webp",
+            "jadeja.webp",
+            "rohit.webp",
+            "sachine.jpg",
+            "virat.webp",
+            "shubman.webp"
         ];
 
         let imgIndex = 0;
-
+        const img = document.getElementById("img")
 
 function back(){
     if(imgIndex==0){
@@ -38,9 +40,22 @@ function back(){
     {
         imgIndex--;
     }
-    const img = document.getElementById("img")
+   
     img.src = gallary[imgIndex]
 }
+
+
+function next(){
+    if(imgIndex==gallary.length-1){
+        imgIndex = 0;
+    }
+    else{
+        imgIndex++;
+    }
+    img.src = gallary[imgIndex]
+}
+
+
     </script>
 </body>
 </html>

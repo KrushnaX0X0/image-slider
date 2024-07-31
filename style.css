@@ -1,13 +1,20 @@
 body{
     background:linear-gradient(to right,#3c393d,#b4c8d8,rgb(40, 152, 139));
 }
+H1{
+    text-align: center;
+    font-size: 3vw;
+}
 
 
 .img-continer{
     height: 50vh;
-    width: 40vw;
+    width: 30vw;
     display: block;
     margin: 10vh auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px black;
+    position: relative;
 }
 
 
@@ -17,9 +24,22 @@ body{
     width: 100%;
     object-fit: contain;
 }
-.btn-continer{
-    display: flex;
-    justify-content: center;
+.btn{
+    height: 5vh;
+    position: absolute;
+    font-size: 5vw;
+    
+}
+#right{
+    top: 20vh;
+    right: -10vh;
+     
+    
+
+}
+#left{
+    top: 20vh;
+    left: -10vh;
 }
 
 .btn-continer button{
